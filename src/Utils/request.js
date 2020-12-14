@@ -14,8 +14,8 @@ instance.defaults.transformResponse = [function (data) {
     return data
   }
 }
-
 ]
+
 // 添加拦截器
 // Add a request interceptor
 instance.interceptors.request.use(function (config) {
