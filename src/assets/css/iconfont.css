@@ -1,0 +1,25 @@
+@font-face {font-family: "my-icon";
+  src: url('./iconfont.eot?t=1607946635838'); /* IE9 */
+  src: url('./iconfont.eot?t=1607946635838#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAPwAAsAAAAACAwAAAOjAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCCfgqDcIM8ATYCJAMMCwgABCAFhG0HRBsIBxHVm2PJfhbYMW1Yefao5S1uRo+DZXT7vgge6D3rTSbpppMFfTDwBbDtwW4AoMqWsgvp2NwMXffCRSiW5Dz4X5aZdDDSC2H5PJfjW+KtD5TjWsu6540FmGBAY2zeHMUFkqA3jF15EbshAEW0TKJs+ap1MdExBglAdO3UoRVmyoRewxaYCGwlM3XETAxMbZJ2AZjhf1+8IXcmaBgSY6+a7cu1peTziOeRcqR7pKZyFCPHcwBsHkggE+gg6pe6aiLDVCaJUlI6iVhXJwHPI93u5xGuaLV/eCDQQNgwcj0BSIVK7YzEtopTE8M0GnDu88AGeAErgGuICewoUb52PSIqQffRjacO8Vx7IFRfdDDJa8PhCGPxoYGTN4/aMmXToo0NPA2vbk5nfbnkcIqriqvGltNJF+s56q07GOa4WffGjcHzA694F607dy6aw1FviquB67aYPz/YWd9Zfb5qaDHPssR8pYQ1ZRPMC2PuxkSLBUKMUmr+ZlEXnEeTbY4stXh7+MKtoWqHK0dD4UX9+la9+sKirj/PamDVzZYlj1yZ4P3Re8IV8GY+T7J98sTkic7jVfZWn2vFr2Ef0dX4+dlr2bbI/LvLGK9L+TcvWar7oJLhpQPKqXUhGaI8CSsfdezJRVufKysX7KsSWC6yijF6qX2rNeWBo55e+9zuqD2yv0zytl8aVcmqEFQucns/y1my8DBvb9tq+5XKhPf08vXa+dJvqeXnVTk80mOROdbHJ/cVPMXw8MbhvysVyqy+t/LTbfv3b/taaW1mjdSmG8K0sNeZ9qWF1NJie8JvhY/ZY19aWC31VLn2tATAfUSmylIoM3ID5ahf+ht8/AsXbOFT9Jtp6QDc+SdTYMA98mjnAfOm3QJ+oLhlla5qwWpdFtkiPSsZjXpFJlRsdWP4/N3vrwlqnQCBmRIzaHgQBYlJIqEzmTCwyAsbJiWgyFBhvkWA3kiEbgfSjQMQ+NoBDW8OQ+LrIqEz92AQ7B1s+CahqC8CVrRYyXlTRrBXnGB4wI+8kWVVE7DfaI+ll6TU5/xRdh+FIs2z2QY3lDHG7KctVQlIeIUa7IfLwhCFA46aOtVYZRmVXSgdeU2MMoK94gSGB/iRN3Ibq8l9/o32WHqpyasI/1F23zwopPIWRKPaWuVdS/v9tCVVwv1IeAU1dOBiphjE8m4BR025HolYyVA9aqtK59esz1fDQyxgTJS91rF9x0fwr8Nv054onvzY640YkwQA') format('woff2'),
+  url('./iconfont.woff?t=1607946635838') format('woff'),
+  url('./iconfont.ttf?t=1607946635838') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('./iconfont.svg?t=1607946635838#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.my-icon {
+  font-family: "my-icon" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.my-icon-shouji:before {
+  content: "\e61b";
+}
+
+.my-icon-icon_verification:before {
+  content: "\e61c";
+}
+

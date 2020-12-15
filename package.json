@@ -12,6 +12,7 @@
     "axios": "^0.21.0",
     "core-js": "^3.6.5",
     "json-bigint": "^1.0.0",
+    "sass": "^1.30.0",
     "vant": "^2.11.2",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0",
@@ -31,8 +32,7 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^6.2.2",
-    "less": "^3.0.4",
-    "less-loader": "^5.0.0",
+    "sass-loader": "^10.1.0",
     "vue-template-compiler": "^2.6.11"
   }
 }
