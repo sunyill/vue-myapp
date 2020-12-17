@@ -39,6 +39,7 @@
 
 <script>
 import { login } from '@/Api/login'
+import { Toast } from 'vant'
 export default {
   data () {
     return {
@@ -56,9 +57,12 @@ export default {
           mobile: '13811111111',
           code: '246810'
         })
+        Toast.success('登录成功')
+        this.$store.commit('setUserTokenState', res)
+        this.$router.push('/')
         console.log('res', res)
       } catch (error) {
-        console.log(error)
+        Toast.fail('登录失败')
       }
     }
   }
