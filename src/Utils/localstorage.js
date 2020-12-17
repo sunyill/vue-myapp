@@ -1,0 +1,14 @@
+/**
+ * 存储本地的封装
+ */
+export const setItem = (key, item) => {
+  return window.localStorage.setItem(key, JSON.stringify(item))
+}
+
+export const getItem = (key) => {
+  return JSON.parse(window.localStorage.getItem(key))
+}
+
+export const removeItem = (key) => {
+  return window.localStorage.removeItem(key)
+}

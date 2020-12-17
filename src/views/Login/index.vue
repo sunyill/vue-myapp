@@ -38,6 +38,7 @@
 </template>
 
 <script>
+import { mapMutations } from 'vuex'
 import { login } from '@/Api/login'
 import { Toast } from 'vant'
 export default {
@@ -51,6 +52,7 @@ export default {
     }
   },
   methods: {
+    ...mapMutations(['setUserTokenState']),
     async handleLogin () {
       try {
         const res = await login({
@@ -58,9 +60,8 @@ export default {
           code: '246810'
         })
         Toast.success('登录成功')
-        this.$store.commit('setUserTokenState', res)
+        this.setUserTokenState(res)
         this.$router.push('/')
-        console.log('res', res)
       } catch (error) {
         Toast.fail('登录失败')
       }
