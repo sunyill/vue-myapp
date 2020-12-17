@@ -2,8 +2,8 @@ import axios from 'axios'
 import jsonBigInt from 'json-bigint'
 
 const instance = axios.create({
-  baseUrl: '/',
-  timeout: '1000'
+  baseURL: 'http://ttapi.research.itcast.cn',
+  timeout: '7000'
 })
 
 // 处理id大数据

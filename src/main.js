@@ -6,6 +6,10 @@ import Vant from 'vant'
 import 'vant/lib/index.css'
 import './styles/index.scss'
 import './assets/css/iconfont.css' // 引入vant图标样式
+// import 'ant-design-vue/dist/antd.css'
+// import { Button } from 'ant-design-vue' // 使用antD
+
+// Vue.component(Button.name, Button)
 
 Vue.use(Vant)
 
