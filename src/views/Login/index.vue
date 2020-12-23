@@ -34,7 +34,7 @@
         </van-field>
       </van-cell-group>
       <div class="login_btn">
-        <van-button round type="primary"  size="normal" @click="handleLogin">登录</van-button>
+        <van-button round type="primary"  :loading='loading' loading-text="登陆中..." loading-type="spinner" size="normal" @click="handleLogin">登录</van-button>
         <div class="login_issue">
           <label for="">账号密码登录</label>
           <font style="color:#697486" >|</font>
@@ -52,6 +52,7 @@ import { Toast } from 'vant'
 export default {
   data () {
     return {
+      loading: false,
       user: {
         mobile: '13811111111',
         code: '246810'
@@ -77,9 +78,11 @@ export default {
   methods: {
     ...mapMutations(['setUserTokenState']),
     async handleLogin () {
+      this.loading = true
       try {
         const valid = this.$validator.validate()
         if (!valid) {
+          this.loading = false
           return false
         }
         const res = await login(this.user)
@@ -88,6 +91,7 @@ export default {
         this.$router.push('/')
       } catch (error) {
         Toast.fail('登录失败')
+        this.loading = false
       }
     }
   }
