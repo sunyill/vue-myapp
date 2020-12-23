@@ -78,15 +78,14 @@ export default {
     ...mapMutations(['setUserTokenState']),
     async handleLogin () {
       try {
-        this.$validator.validate().then(async valid => {
-          if (!valid) {
-            return true
-          }
-          const res = await login(this.user)
-          Toast.success('登录成功')
-          this.setUserTokenState(res)
-          this.$router.push('/')
-        })
+        const valid = this.$validator.validate()
+        if (!valid) {
+          return false
+        }
+        const res = await login(this.user)
+        Toast.success('登录成功')
+        this.setUserTokenState(res)
+        this.$router.push('/')
       } catch (error) {
         Toast.fail('登录失败')
       }
